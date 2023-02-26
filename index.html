@@ -25,63 +25,56 @@
 <body>
     <nav id="navbar" class="navbar navbar-expand-md mt-4 fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#"><img src="./img/logo-1 1.png" alt="brand-Logo" class="navbar-logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white bg-danger" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="navbar-brand text-white" href="index.html"><img src="./img/logo-1 1.png" alt="brand-Logo" class="navbar-logo"></a>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown  d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle text-white bg-danger" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Download App
                     </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Google playstore</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Huawei Appstore</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Samsung Galaxy Appstore</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Akpure</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">GetJar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Gameloop Appstore</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Apkcombo</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-success me-5 ms-5 bg-transparent" type="submit">Play</button>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      EN
-                    </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Google playstore</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Huawei Appstore</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Samsung Galaxy Appstore</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Akpure</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">GetJar</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Gameloop Appstore</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Apkcombo</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                     </ul>
                 </li>
-            </div>
+                <button class="btn btn-outline-success me-5 ms-5 bg-transparent d-none d-lg-block" type="submit">Play</button>
+                <div class="dropdown-button">
+                    <button class="dropbtn">EN 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                    <div class="dropdown-content">
+                        <a href="#">Eng</a>
+                        <a href="#">Hindi</a>
+                        <a href="#">Latin</a>
+                    </div>
+                </div>
+            </ul>
         </div>
     </nav>
 
@@ -94,55 +87,63 @@
                 <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <div class="carousel-content d-lg-flex align-items-center justify-content-center my-5">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="container carousel-content d-lg-flex align-items-center justify-content-center my-5">
                         <div class="text-white">
                             <h1>Gaming</h1>
                             <p class="w-75">
                                 ConnectBoy is a Next-Gen Gaming and gambling <br/> platform created to give people opportunities to earn money with their hobbies & areas of interest.
                             </p>
-                            <div class="slide-button">
-                                <a class="btn btn-danger me-4 btn-custom-property" href="#">Download</a
-                                    >
-                                    <a
-                                        class="btn btn-outline-dark text-white btn-play"
-                                        href="#"
-                                        >Play</a
-                                    >
+                            <div class="slide-button d-flex gap-4">
+                                <div class="dropdown-carousel-button">
+                                    <button class="dropbtn-radius">Download App
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Google playstore</a>
+                                        <a href="#">Huawei Appstore</a>
+                                        <a href="#">Samsung Galaxy Appstore</a>
+                                        <a href="#">Akpure</a>
+                                        <a href="#">GetJar</a>
+                                        <a href="#">Gameloop Appstore</a>
+                                        <a href="#">Apkcombo</a>
+                                    </div>
                                 </div>
+                                <a class="btn btn-outline-dark text-white btn-play" href="#">Play</a>
                             </div>
-                            <img
-                                src="img/istockphoto-1142867045-612x612-removebg-preview 1.png"
-                                class="d-block w-100"
-                                alt="..."
-                            />
                         </div>
+                        <img src="img/istockphoto-1142867045-612x612-removebg-preview 1.png" class="d-block w-50" alt="..." />
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <div
-                            class="carousel-content d-lg-flex align-items-center justify-content-center my-5"
-                        >
-                            <div class="text-white carousel-content-text">
-                                <h1>Metaverse</h1>
-                                <p class="w-75">
-                                    Step into our metaverse called CONNECT
-                                    WORLD. We are changing the virtual reality
-                                    experience.
-                                </p>
-                                <div class="slide-button">
-                                    <a class="btn btn-danger me-4 btn-custom-property" href="#"
-                                        >Download</a
-                                    >
-                                    <a
-                                        class="btn btn-outline-dark text-white btn-play"
-                                        href="#"
-                                        >Play</a
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="container carousel-content d-lg-flex align-items-center justify-content-center my-5">
+                        <div class="text-white carousel-content-text">
+                            <h1>Metaverse</h1>
+                            <p class="w-75">
+                                Step into our metaverse called CONNECT WORLD. We are changing the virtual reality experience.
+                            </p>
+                            <div class="slide-button d-flex gap-4">
+                                <div class="dropdown-carousel-button">
+                                    <button class="dropbtn-radius">Download App
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Google playstore</a>
+                                        <a href="#">Huawei Appstore</a>
+                                        <a href="#">Samsung Galaxy Appstore</a>
+                                        <a href="#">Akpure</a>
+                                        <a href="#">GetJar</a>
+                                        <a href="#">Gameloop Appstore</a>
+                                        <a href="#">Apkcombo</a>
+                                    </div>
+                                </div>
+                                <a class="btn btn-outline-dark text-white btn-play" href="#">Play</a
                                     >
                                 </div>
                             </div>
                             <img
                                 src="img/k4fnk4f-768x752.png"
-                                class="d-block w-100"
+                                class="d-block w-50"
                                 alt="..."
                             />
                         </div>
@@ -150,7 +151,7 @@
                     
                     <div class="carousel-item" data-bs-interval="2000">
                         <div
-                            class="carousel-content d-lg-flex align-items-center justify-content-center my-5"
+                            class="container carousel-content d-lg-flex align-items-center justify-content-center my-5"
                         >
                             <div class="text-white">
                                 <h1>Gambling</h1>
@@ -159,20 +160,28 @@
                                     today! Join us everyday and get amazing
                                     daily rewards.
                                 </p>
-                                <div class="slide-button">
-                                    <a class="btn btn-danger me-4 btn-custom-property" href="#"
-                                        >Download</a
-                                    >
-                                    <a
-                                        class="btn btn-outline-dark text-white btn-play"
-                                        href="#"
-                                        >Play</a
+                                <div class="slide-button d-flex gap-4">
+                                  <div class="dropdown-carousel-button">
+                                    <button class="dropbtn-radius">Download App
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Google playstore</a>
+                                <a href="#">Huawei Appstore</a>
+                                <a href="#">Samsung Galaxy Appstore</a>
+                                <a href="#">Akpure</a>
+                                <a href="#">GetJar</a>
+                                <a href="#">Gameloop Appstore</a>
+                                <a href="#">Apkcombo</a>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline-dark text-white btn-play" href="#">Play</a
                                     >
                                 </div>
                             </div>
                             <img
                                 src="img/chest-open.png"
-                                class="d-block w-100"
+                                class="d-block w-50"
                                 alt="..."
                             />
                         </div>
@@ -190,296 +199,292 @@
                       <div class="card card-1 border-0 bg-transparent">
                         <div class="card-body position-relative">
                           <a href="#" class="btn btn-danger text-white">What's New?</a>
-                                <p class="card-text text-white">Deposit with Cryptocurrency & Cash.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="card card-2 border-0 bg-transparent">
-                            <div class="card-body position-relative">
-                                <a href="#" class="btn btn-danger text-white">Did you know?</a>
-                                <p class="card-text text-white">You can Withdraw funds to your Crypto Wallet or Bank Account.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card card-3 card-col-3-content">
-                            <div class="card-body d-flex align-items-center justify-content-between">
-                                <img src="img/Rectangle 35.png" alt="" class="me-4 w-100" />
-                                <p class="card-text text-white">
-                                    Predictions on Global Events & Trending topics
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-4 card-col-3-content">
-                            <div class="card-body d-flex align-items-center justify-content-between">
-                                <img src="img/Rectangle 36 (1).png" alt="" class="me-4 w-100" />
-                                <p class="card-text text-white">
-                                    Fast and Reliable Live Support
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-5 card-col-3-content">
-                            <div class="card-body d-flex align-items-center ">
-                                <img src="img/Rectangle 37.png" alt="" class="me-4 w-100" />
-                                <p class="card-text text-white">
-                                    Binary Trading
-                                </p>
-                            </div>
-                        </div>
+                        <p class="card-text text-white">Deposit with Cryptocurrency & Cash.</p>
                     </div>
                 </div>
             </div>
-            </section>
-
-            <!-- end of features section -->
-
-            <!-- Category/Main Section -->
-            <main>
-                <h1 class="text-white mt-5 category-property" align="center">CATEGORIES</h1>
-                <section class="category" id="category">
-                    <div class="category-img">
-                        <div class="container">
-                            <div class="row d-flex align-items-center justify-content-center">
-                                <div class="col-md-6 col-sm-12">
-                                    <h2 class="text-white mb-4 category-property">LIVE PREDICTION</h2>
-                                    <p class="text-white mb-4">Bet on global events and trending topics.</p>
-                                    <a class="btn btn-danger" href="#">Play now</a>
-                                </div>
-
-                                <div class="col-md-6 col-sm-12">
-                                    <img class="w-100 img-tag" src="img/gif_2__1__1-removebg-preview 1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="category-2 mt-3 mb-3 id=" category-2 ">
-                <div class="category-2-left "></div>
-                <div class="category-2-middle "></div>
-                <div class="category-2-right "></div>
-
-                <div class="container ">
-                    <div class="row d-flex align-items-center justify-content-center ">
-                        <div class="col-md-6 col-sm-12 ">
-                            <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-left-t coin-w ">
-                            <img class="img-tag-2 w-100 " src="./img/330134302_634348538458505_969495861248945596_n-removebg-preview 1.png " alt=" ">
-                            <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-left-b coin-w ">
-                        </div>
-                        <div class="col-md-6 col-sm-12 ">
-                            <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-right-t coin-w ">
-                            <h2 class="text-white mb-4 category-property ">LOTTERY & CASINO</h2>
-                            <p class="text-white mb-4 ">Buy official Lottery Tickets to win our weekly & monthly Lottery draw.</p>
-                            <a class="btn btn-danger " href="# ">Play now</a>
-                            <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-right-b coin-w ">
-                        </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card card-2 border-0 bg-transparent">
+                    <div class="card-body position-relative">
+                        <a href="#" class="btn btn-danger text-white">Did you know?</a>
+                        <p class="card-text text-white">You can Withdraw funds to your Crypto Wallet or Bank Account.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <section class="category " id="category ">
-                <div class="category-img-3 ">
-                    <div class="container ">
-                        <div class="row d-flex align-items-center justify-content-center ">
-                            <div class="col-md-6 col-sm-12 ">
-                                <h2 class="text-white mb-4 category-property ">FOREX</h2>
-                                <p class="text-white mb-4 ">Binary Trading on Cryptocurrencies, Fiat and on Daily Stock market price.</p>
-                                <a class="btn btn-danger " href="# ">Play now</a>
-                            </div>
 
-                            <div class="col-md-6 col-sm-12 ">
-                                <img class="img-tag w-100 " src="img/about-1.png " alt=" ">
-                            </div>
-                        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card card-3 card-col-3-content">
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <img src="img/Rectangle 35.png" alt="" class="me-4 w-50" />
+                        <p class="card-text text-white">
+                            Predictions on Global Events & Trending topics
+                        </p>
                     </div>
                 </div>
+            </div>
+            <div class="col">
+                <div class="card card-4 card-col-3-content">
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <img src="img/Rectangle 36 (1).png" alt="" class="me-4 w-50" />
+                        <p class="card-text text-white">
+                            Fast and Reliable Live Support
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-5 card-col-3-content">
+                    <div class="card-body d-flex align-items-center ">
+                        <img src="img/Rectangle 37.png" alt="" class="me-4 w-50" />
+                        <p class="card-text text-white">
+                            Binary Trading
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- end of features section -->
+
+    <!-- Category/Main Section -->
+    <main class="category-section">
+        <h1 class="text-white category-property-heading">CATEGORIES</h1>
+        <section class="category" id="category">
+            <div class="category-img">
+                <div class="container section-1-content">
+                    <div class="section-1-content-inner">
+                        <div class="">
+                            <h2 class="text-white category-property">LIVE PREDICTION</h2>
+                            <p class="text-white mb-4">Bet on global events and trending topics.</p>
+                            <a class="btn btn-danger" href="#">Play now</a>
+                        </div>
+                        <img class="w-100 img-tag" src="img/gif_2__1__1-removebg-preview 1.png" alt="">
+
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="category-4 category-2 mt-3 mb-5 id="category-2">
-                    <div class="category-4-left"></div>
-                    <div class="category-4-middle"></div>
-                    <div class="category-4-right"></div>
+        <section class="category my-5 position-relative" id="category-2">
+            <div class="category-2-left"></div>
+            <div class="category-2-middle"></div>
+            <div class="category-2-right"></div>
 
-                    <div class="container">
-                        <div class="row d-flex align-items-center justify-content-center">
-                            <div class="col-md-6 col-sm-12">
-                                <img class="img-tag-2 w-100" src="./img/4-04-768x414-removebg-preview 1.png" alt="">
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <h2 class="text-white mb-4 category-property">VIDEO CHALLENGE</h2>
-                                <p class="text-white mb-4">Challenge your opponent, Post Challenge videos, Place wager against opponent, Highest Likes wins the challenge.</p>
-                                <a class="btn btn-danger" href="#">Play now</a>
-                            </div>
-                        </div>
+            <div class="container section-1-content">
+                <div class="section-1-content-inner">
+                    <div>
+                        <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-left-t coin-w ">
+                        <img class="img-tag-2 w-100 image-1" src="./img/330134302_634348538458505_969495861248945596_n-removebg-preview 1.png " alt=" ">
+                        <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-left-b coin-w ">
                     </div>
-                </section>
-            </main>
+                    <div class="text">
+                        <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-right-t coin-w ">
 
-            <!-- End of Category Section -->
+                        <h2 class="text-white mb-4 category-property ">LOTTERY & CASINO</h2>
+                        <p class="text-white mb-4 ">Buy official Lottery Tickets to win our weekly & monthly Lottery draw.</p>
+                        <a class="btn btn-danger " href="# ">Play now</a>
 
-            <!-- Participate Section -->
-            <div class="participate mb-5 mt-5">
-                <h2 class="text-white mb-5 mt-5 participate-property-title d-flex justify-content-center">HOW TO PARTICIPATE</h2>
-                <div class="container mt-5">
-                    <div class="row d-flex align-items-center justify-content-center">
-                        <div class="col-md-4">
-                            <h3 class="text-white participate-property">STEP 1</h3>
-                            <p class="w-100 text-white">Select your favourite Category on ConnectBoy. Preferably one you're most familiar with!</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="text-white participate-property">STEP 2</h3>
-                            <p class="w-100 text-white">Sign up and make a deposit on your wallet to get started.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="text-white participate-property">STEP 3</h3>
-                            <p class="w-100 text-white">Withdraw your winnings to your crypto wallet or bank account.</p>
-                        </div>
+                        <img src="./img/coin-3 1.png " alt="Bitcoin " class="img-coin-right-b coin-w ">
                     </div>
                 </div>
             </div>
+        </section>
 
-
-            <!-- Section Up-Coming FEATURES -->
-            <section class="u-features mt-5 container mb-5">
-                <h2 class="text-white u-features-property d-flex justify-content-center">UPCOMING FEATURES</h2>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                        <div class="card border-0 bg-transparent">
-                            <img src="./img/Vector.png" class="card-img-top mb-5" alt="...">
-                            <div class="card-body">
-                                <h5 class="text-white card-title mb-4">CONNECTBOY GAMES</h5>
-                                <p class="text-white card-text mb-3"><span style="text-transform: uppercase;" ">E</span>arn money playing Mobile Games on ConnectBoy</p>
-                      <a href="# ">View details</a>
+        <section class="category " id="category ">
+            <div class="category-img-3 ">
+                <div class="container section-1-content">
+                    <div class="section-1-content-inner">
+                        <div>
+                            <h2 class="text-white mb-4 category-property ">FOREX</h2>
+                            <p class="text-white mb-4 ">Binary Trading on Cryptocurrencies, Fiat and on Daily Stock market price.</p>
+                            <a class="btn btn-danger " href="# ">Play now</a>
+                        </div>
+                        <img class="img-tag w-100 " src="img/about-1.png " alt=" ">
                     </div>
-                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category position-relative" id=" category-2 ">
+            <div class="category-4-left "></div>
+            <div class="category-4-middle "></div>
+            <div class="category-4-right "></div>
+
+            <div class="container section-1-content mt-4">
+                <div class=" section-1-content-inner ">
+                    <img class="img-tag-2 w-100 image-1 " src="./img/4-04-768x414-removebg-preview 1.png " alt=" ">
+
+                    <div class="text ">
+                        <h2 class="text-white mb-4 category-property ">VIDEO CHALLENGE</h2>
+                        <p class="text-white mb-4 ">Challenge your opponent, Post Challenge videos, Place wager against opponent, Highest Likes wins the challenge.</p>
+                        <a class="btn btn-danger " href="# ">Play now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- End of Category Section -->
+
+    <!-- Participate Section -->
+    <div class="participate mb-5 mt-5 ">
+        <h2 class="text-white mb-5 mt-5 participate-property-title d-flex justify-content-center ">HOW TO PARTICIPATE</h2>
+        <div class="container mt-5 ">
+            <div class="row d-flex align-items-center justify-content-center ">
+                <div class="col-md-4 ">
+                    <h3 class="text-white participate-property ">STEP 1</h3>
+                    <p class="w-100 text-white ">Select your favourite Category on ConnectBoy. Preferably one you're most familiar with!</p>
+                </div>
+                <div class="col-md-4 ">
+                    <h3 class="text-white participate-property ">STEP 2</h3>
+                    <p class="w-100 text-white ">Sign up and make a deposit on your wallet to get started.</p>
+                </div>
+                <div class="col-md-4 ">
+                    <h3 class="text-white participate-property ">STEP 3</h3>
+                    <p class="w-100 text-white ">Withdraw your winnings to your crypto wallet or bank account.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section Up-Coming FEATURES -->
+    <section class="u-features container">
+        <h2 class="text-white u-features-property d-flex justify-content-center">UPCOMING FEATURES</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 ">
+            <div class="col ">
+                <div class="card border-0 bg-transparent mt-lg-5">
+                    <img src="./img/Vector.png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="text-white card-title mb-4 ">CONNECTBOY GAMES</h5>
+                        <p class="text-white card-text mb-3 "><span style="text-transform: uppercase; ">E</span>arn money playing Mobile Games on ConnectBoy</p>
+                        <a href="# ">View details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 bg-transparent ">
+                    <div class="img-wrapper card-img-top my-4 d-flex ">
+                        <img class="w-25" src="./img/Screenshot 2023-02-25 080438.jpg" alt="">
+                    </div>
+                    <div class="card-body ">
+                        <h5 class="text-white card-title mb-4 ">CONNECTBOY TRIVIAL</h5>
+                        <p class="text-white card-text mb-3 ">Get paid for answering questions and participating in our quiz events daily. Also join our weekly Family Game show of "Everyone can be a Millionaire " and be part of our lucky users from around the world winning $1million weekly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 bg-transparent ">
+                    <img src="./img/Vector (3).png " class="card-img-top mb-5 " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="text-white card-title mb-4 ">BECOME AN AGENT</h5>
+                        <p class="text-white card-text mb-3 "><span style="text-transform: uppercase; " ">P</span>artner with us and bring ConnectBoy to your City. Become an agent and own your very own shop in your local area, Extend our online
+                                    services to users in your city let's reach the world together.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card border-0 bg-transparent ">
+                            <img src="./img/Vector (4).png " class="card-img-top mb-5 " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="text-white card-title mb-4 ">CONNECT WORLD</h5>
+                                <p class="text-white card-text mb-3 ">
+                                    <span style="text-transform: uppercase; " ">C</span>onnect World is a physical and Virtual Reality space where users can come in and participate on all our categories physically or Virtually.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <div class="partners container ">
+        <h3 class="partners-title d-flex justify-content-center text-white ">PARTNERS</h3>
+        <div class="container text-center ">
+            <div class="row row-1 mb-5 ">
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (3).png " alt=" "></a>
                 </div>
                 <div class="col ">
-                    <div class="card border-0 bg-transparent ">
-                        <div class="img-wrapper card-img-top mb-1 d-flex ">
-                            <img src="./img/Rectangle 40.png " alt="... ">
-                            <img src="./img/Rectangle 38.png " alt="... ">
-                            <img src="./img/Rectangle 39.png " alt="... ">
-                        </div>
-                      <div class="card-body ">
-                        <h5 class="text-white card-title mb-4 ">CONNECTBOY TRIVIAL</h5>
-                        <p class="text-white card-text mb-3 "><span style="text-transform: uppercase; "">G</span>et paid for answering questions and participating in our quiz events daily. Also join our weekly Family Game show of "Everyone can be a
-                                    Millionaire" and be part of our lucky users from around the world winning $1million weekly.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card border-0 bg-transparent">
-                            <img src="./img/Vector (3).png" class="card-img-top mb-5" alt="...">
-                            <div class="card-body">
-                                <h5 class="text-white card-title mb-4">BECOME AN AGENT</h5>
-                                <p class="text-white card-text mb-3"><span style="text-transform: uppercase;" ">P</span>artner with us and bring ConnectBoy to your City. Become an agent and own your very own shop in your local area, Extend our online services to users in your city let's reach the world together.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ">
-                    <div class="card border-0 bg-transparent ">
-                      <img src="./img/Vector (4).png " class="card-img-top mb-5 " alt="... ">
-                      <div class="card-body ">
-                        <h5 class="text-white card-title mb-4 ">CONNECT WORLD</h5>
-                        <p class="text-white card-text mb-3 "><span style="text-transform: uppercase; "">C</span>onnect World is a physical and Virtual Reality space where users can come in and participate on all our categories physically or Virtually.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (2).png " alt=" "></a>
                 </div>
-            </section>
-
-            <!-- Partners Section -->
-            <div class="partners container">
-                <h3 class="partners-title d-flex justify-content-center text-white">PARTNERS</h3>
-                <div class="container text-center">
-                    <div class="row row-1 row-cols-5 mb-5">
-                        <div class="col">
-                            <a href="#" class="partners-link"><img class="logo-1" src="./img/Mask group (3).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img class="logo-2" src="./img/Mask group (2).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img class="logo-3" src="./img/Mask group (1).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img src="./img/Mask group.png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img class="logo-5" src="./img/Mask group (4).png" alt="" class="partners-logo"></a>
-                        </div>
-                    </div>
-
-                    <div class="row row-2 row-cols-5">
-                        <div class="col">
-                            <a href="#" class="partners-link"><img src="./img/Mask group (9).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img src="./img/Mask group (8).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img src="./img/Mask group (7).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img class="logo-9" src="./img/Mask group (6).png" alt="" class="partners-logo"></a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="partners-link"><img class="logo-10" src="./img/Mask group (5).png" alt="" class="partners-logo"></a>
-                        </div>
-                    </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (1).png " alt=" "></a>
+                </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group.png " alt=" "></a>
+                </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (4).png " alt=" "></a>
                 </div>
             </div>
 
-            <!-- Connect World -->
-            <div class="connect-info-bg mt-3 mb-5">
-                <div class="container connect-info">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div class="">
-                            <h3 class="text-white">CONNECT WORLD</h3>
-                            <p class="text-white w-75">Connect World is a physical and Virtual Reality space when users can come in and participate on all our categories physically or Virtually.</p>
-                        </div>
-                        <div class="mt-5">
-                            <img class="w-100" src="./img/k4fnk4f-768x752.png" alt="">
-                        </div>
+            <div class="row row-1">
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (9).png " alt=" " class="partners-logo "></a>
+                </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (8).png " alt=" " class="partners-logo "></a>
+                </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " src="./img/Mask group (7).png " alt=" " class="partners-logo "></a>
+                </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img class="partner-logo " class="logo-9 " src="./img/Mask group (6).png " alt=" " class="partners-logo "></a>
+                </div>
+                <div class="col ">
+                    <a href="# " class="partners-link "><img cclass="partner-logo " class="logo-10 " src="./img/Mask group (5).png " alt=" " class="partners-logo "></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connect World -->
+    <div class="connect-info-bg mt-3 mb-5 ">
+        <div class="container connect-info ">
+            <div class="d-lg-flex align-items-center justify-content-center ">
+                <div class=" ">
+                    <h3 class="text-white ">CONNECT WORLD</h3>
+                    <p class="text-white w-75 ">Connect World is a physical and Virtual Reality space when users can come in and participate on all our categories physically or Virtually.</p>
+                </div>
+                <div class="mt-5 ">
+                    <img class="w-100 " src="./img/k4fnk4f-768x752.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Footer -->
+    <footer class="footer ">
+        <div class="container ">
+            <p class="footer-text text-white mb-5 ">Every Category Is Licensed and Patented by the ConnectBoy Organization</p>
+            <div class="footer-logo mb-5 ">
+                <img src="./img/logo-1 1.png " alt="Connect-Boy-Logo ">
+            </div>
+            <div class="footer-link-wrapper mb-5 ">
+                <div class="container text-center ">
+                    <div class="mb-5 d-flex justify-content-center align-items-center gap-5 ">
+                        <div class=" "><a href="# " class="footer-link "><i class="fa-brands fa-facebook "></i></a></div>
+                        <div class=" "><a href="# " class="footer-link "><i class="fa-brands fa-instagram "></i></a></div>
+                        <div class=" "><a href="# " class="footer-link "><i class="fa-brands fa-twitter "></i></a></div>
+                        <div class=" "><a href="# " class="footer-link "><i class="fa-brands fa-tiktok "></i></a></div>
+                        <div class=" "><a href="# " class="footer-link "><i class="fa-brands fa-linkedin "></i></a></div>
                     </div>
                 </div>
             </div>
+            <div class="copyright mb-5 ">
+                <p class="copyright-text text-white ">Copyright ©️ 2023 - Infinity The ConnectBoy Organization. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-            <!-- Section Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <p class="footer-text text-white mb-5">Every Category Is Licensed and Patented by the ConnectBoy Organization</p>
-                    <div class="footer-logo mb-5">
-                        <img src="./img/logo-1 1.png" alt="Connect-Boy-Logo">
-                    </div>
-                    <div class="footer-link-wrapper mb-5">
-                        <div class="container text-center">
-                            <div class="mb-5 d-flex justify-content-center align-items-center gap-5">
-                                <div class=""><a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a></div>
-                                <div class=""><a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a></div>
-                                <div class=""><a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a></div>
-                                <div class=""><a href="#" class="footer-link"><i class="fa-brands fa-tiktok"></i></a></div>
-                                <div class=""><a href="#" class="footer-link"><i class="fa-brands fa-linkedin"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="copyright mb-5">
-                        <p class="copyright-text text-white">Copyright ©️ 2023 - Infinity The ConnectBoy Organization. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </footer>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-            <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
+    <script src="js/scripts.js "></script>
 </body>
 
 </html>
