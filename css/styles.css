@@ -36,6 +36,25 @@ body {
     font-family: var(--font-family-1);
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(30%);
+    transition: all 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 
 /* navbar */
 
@@ -46,7 +65,7 @@ body {
 #navbar.navbar-scroll {
     margin-top: -0.1rem !important;
     background: #191919;
-    padding: 1rem 0.1rem !important;
+    padding: 2rem 0.3rem 1rem 0.3rem !important;
     box-shadow: 0px 8px 16px 0px rgba(225, 225, 223, 0.5) !important;
 }
 
@@ -444,21 +463,35 @@ body {
 #category-2 .img-coin-left-t {
     left: 0.2rem;
     top: -2.5rem;
+    -webkit-animation: rightcoins 4s infinite alternate;
+    /* Safari 4.0 - 8.0 */
+    animation: rightcoins 4s infinite alternate;
 }
 
 #category-2 .img-coin-left-b {
     left: 8rem;
     bottom: 0.5rem;
+    -webkit-animation: rightcoins 4s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: rightcoins 4s infinite;
 }
 
 #category-2 .img-coin-right-t {
-    right: 5rem;
+    right: 9rem;
     top: -3rem;
+    transition: all 0.4s;
+    -webkit-animation: rightcoins 4s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: rightcoins 4s infinite;
+    /* animation-direction: alternate; */
 }
 
 #category-2 .img-coin-right-b {
     right: 12rem;
     bottom: -3rem;
+    -webkit-animation: rightcoins 4s infinite alternate;
+    /* Safari 4.0 - 8.0 */
+    animation: rightcoins 4s infinite alternate;
 }
 
 @media (max-width: 780px) {
@@ -471,11 +504,11 @@ body {
         bottom: 0.5rem;
     }
     #category-2 .img-coin-right-t {
-        right: 3rem;
+        right: 8rem;
         top: -3rem;
     }
     #category-2 .img-coin-right-b {
-        right: 4rem;
+        right: 7.5rem;
         bottom: -3rem;
     }
 }
@@ -750,5 +783,50 @@ body {
     .category-4-medium,
     .category-4-right {
         filter: blur(300px);
+    }
+}
+
+
+/* Animations */
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes rightcoins {
+    0% {
+        transform: translateX(-100);
+    }
+    25% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    75% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes rightcoins {
+    0% {
+        transform: translateX(-100);
+    }
+    25% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    75% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translate(0);
     }
 }
