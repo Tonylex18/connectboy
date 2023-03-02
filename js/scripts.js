@@ -33,6 +33,7 @@ function animateTextInfinite() {
       "Bet on global events and trending topics.",
       "Get the best odds on your favourite sports events.",
       "Bet on political elections and events from around the world.",
+      "Place Bets on the outcome of Award Events and Top Reality shows Globally",
     ]);
   }, fixedInterval);
   return intID;
@@ -41,6 +42,7 @@ animateTextInfinite(2500, [
   "Bet on global events and trending topics.",
   "Get the best odds on your favourite sports events.",
   "Bet on political elections and events from around the world.",
+  "Place Bets on the outcome of Award Events and Top Reality shows Globally",
 ]);
 
 ///////////
@@ -137,6 +139,37 @@ animateTextInfinite4(2500, [
   "Challenge your opponent, Post Challenge videos, Place wager against opponent, Highest Likes wins the challenge.",
   "If you love creating content on social media then this is for you.",
   "Challenge your friends and see who gets the best engagements on your videos.",
+]);
+
+function animateTextFinite5(interval, content) {
+  let text = document.getElementById("text-5"); //this is where you intend to display the text
+  let index = 0; //this gets the first value of the array
+  let intID = setInterval(() => {
+    text.innerHTML = content[index];
+    index++; //this auto increments the index of the array values
+    if (index === content.length) {
+      clearInterval(intID);
+    }
+  }, interval);
+  return intID;
+}
+function animateTextInfinite5() {
+  const fixedInterval = arguments[0] * arguments[1].length;
+  let intID = setInterval(() => {
+    animateTextFinite5(2500, [
+      "Connect World is a physical and Virtual Reality space where users can come in and participate on all our categories physically or Virtually.",
+      "Step into the metaverse called CONNECT WORLD and experience a world for gaming & Gambling",
+      "Do you want to know what lt's like to trade in the Metaverse?",
+      "CONNECT WORLD is the future so be part of us now.",
+    ]);
+  }, fixedInterval);
+  return intID;
+}
+animateTextInfinite5(2500, [
+  "Connect World is a physical and Virtual Reality space where users can come in and participate on all our categories physically or Virtually.",
+  "Step into the metaverse called CONNECT WORLD and experience a world for gaming & Gambling",
+  "Do you want to know what lt's like to trade in the Metaverse?",
+  "CONNECT WORLD is the future so be part of us now.",
 ]);
 
 const observer = new IntersectionObserver((entries) => {
