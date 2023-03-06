@@ -946,6 +946,9 @@ body {
     #navbar.navbar-scroll {
         padding: 0.5rem 0.3rem 0.5rem 0.3rem !important;
     }
+    .category .section-1-content-inner .btn {
+        font-size: 10px;
+    }
 }
 
 
